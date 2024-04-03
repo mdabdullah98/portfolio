@@ -5,7 +5,7 @@ const Experience = (
     <h5>Concentrix Daksh services India Pvt Ltd.</h5>
     <div className="d-flex justify-content-between">
       <p>Frontend Web Developer</p>
-      <p className="h6 text-danger mb-1">May 2023 - Present</p>
+      <p className="h6 text-danger mb-1">April 2023 - Present</p>
     </div>
     <ul>
       <li>

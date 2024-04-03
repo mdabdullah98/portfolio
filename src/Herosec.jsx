@@ -8,15 +8,17 @@ const Herosec = () => {
     <MainDiv id="home">
       <Div>
         <ContetnDiv>
-          <h5>Hello, Its Me</h5>
+          <h5>Hello,</h5>
           <h1 className="myname "> Md Abdullah </h1>
           <h3 className="desig mt-4 mb-2">
             <Typewriter
               options={{
                 strings: [
                   "React Js Developer",
-                  "Problem Solving Skills",
-                  "Good in Communication Skills",
+                  "Problem Solving ",
+                  "Interpersonal Communication",
+                  " Time Management",
+                  "Active Listening",
                 ],
                 autoStart: true,
                 loop: true,

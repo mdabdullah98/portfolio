@@ -5,24 +5,24 @@ const SocialMediaCompo = () => {
   return (
     <SocialMedia>
       <li>
-        <a href="#">
+        <span>
           <i className="bi bi-linkedin social-icon"></i>
-        </a>
+        </span>
       </li>
       <li>
-        <a href="#">
+        <span>
           <i className="bi bi-github social-icon"></i>
-        </a>
+        </span>
       </li>
       <li>
-        <a href="#">
+        <span>
           <i className="bi bi-twitter social-icon"></i>
-        </a>
+        </span>
       </li>
       <li>
-        <a href="#">
+        <span>
           <i className="bi bi-instagram social-icon"></i>
-        </a>
+        </span>
       </li>
     </SocialMedia>
   );
@@ -41,7 +41,8 @@ const SocialMedia = styled.div`
     position: relative;
     list-style: none;
     margin-right: 1rem;
-    a {
+    cursor: pointer;
+    span {
       position: absolute;
       top: 50%;
       left: 50%;

@@ -93,11 +93,7 @@ const ContactUs = () => {
               <SocialMediaCompo />
             </div>
             <Button Btncolor="orangered" textColor="white">
-              <a
-                href="./MdAbdullah_updated_resume.pdf"
-                download={true}
-                title="download CV"
-              >
+              <a href="./md_abdullah.pdf" download={true} title="download CV">
                 Resume
               </a>
             </Button>
