@@ -1,0 +1,109 @@
+.skills-section {
+  width: 90%;
+  height: 100%;
+  padding: 1rem 0;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: 1.5rem;
+}
+.skills-heading {
+  color: #fff;
+  text-align: center;
+  margin-top: 2rem;
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 24rem;
+  height: 200px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background: #000000;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.flip-card-front .card-figure {
+  width: 10rem;
+  height: 10rem;
+}
+.flip-card-front.html {
+  color: rgb(237, 43, 43);
+}
+.flip-card-front.css-3 {
+  color: cyan;
+}
+.flip-card-front.javascript {
+  color: rgb(234, 234, 123);
+}
+.flip-card-front.react {
+  color: rgb(60, 200, 200);
+}
+.flip-card-front.redux {
+  color: rgb(217, 94, 217);
+}
+.flip-card-front.tailwind-css {
+  color: rgb(33, 184, 203);
+}
+.flip-card-front.github {
+  color: rgb(255, 255, 255);
+}
+.flip-card-front.responsive {
+  color: rgb(162, 236, 120);
+}
+.flip-card-front.firebase {
+  color: rgb(255, 198, 93);
+}
+.flip-card-front.axios {
+  color: rgb(78, 92, 247);
+}
+.flip-card-front.react-hook-form {
+  color: rgb(249, 116, 116);
+}
+
+/* Style the back side */
+.flip-card-back {
+  background: rgb(255, 255, 255);
+  padding: 0.5rem;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+}
+.flip-card-back h2 {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 900px) {
+  .skills-section {
+    justify-items: center;
+  }
+}
